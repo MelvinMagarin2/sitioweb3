@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+@font-face {
+    font-family:"skate";
+    src: url(../HELTSN__.TTF);
+} 
+
+@font-face {
+    font-family:"urban";
+    src: url(../Urban_slick.ttf);
+} 
+
+a{
+    /* con esto quita estilos a las anclas <a> */
+    text-decoration: none;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section{
+    padding: 45px, 0px, 45px, 0px;
+}
+
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+
+
+.header{
+    display: flex;
+    background-color: #148F77;
+    
+}
+
+
+.menu-nav{
+    width: 70%;
+    display: flex;
+    justify-content: center; /* alineado horizontal centrado */
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container-nav{
+    width: 80%;
+    display: flex;
+}
+
+.menu a{
+    padding: 0px 25px 0px 25px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #3a2d2d;
+}
+
+.menu a:hover{
+    color: #E8F8F5;
+}
+
+.menu-social ul{
+    list-style: none;
+    display: flex;
+}
+
+.social-media i{
+padding: 25px;
+font-size: 25px;
+color: #fff;
+}
+
+.social-media i:hover{
+    color: #17202A;
+}
+
+.social-media{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    background-image: url(../img/fondo2.png);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero h1{
+    color: #080808;
+    background-color:#76D7C4 ;
+    padding: 20px;
+    font-family: "urban", normal;
+}
+
+.form-register{
+    background-image: url(../img/photo-vans.avif);
+    width: 400px;
+    background: #148F77;
+    padding: 5%;
+    margin: auto;
+    margin-block: 100px;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 7px 13px 37px #000;
+    align-items: center;
+    text-align: center;
+}
+.form-register h3{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    margin-bottom: 22px;
+}
+.controls{
+    width: 100%;
+    background: rgb(228, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #0a0909;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.form-register p{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #e8e8e8;
+}
+.form-register a{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.form-register a:hover{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    
+}
+.botons{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    border: none;
+    padding: 12px;
+    color: #fffefe;
+    margin: 16px,0;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botons:hover{
+    color: #03963e;
+}
+.zapatos{
+    padding: 0px 10px 0px 10px;
+    font-family: "urban", normal;
+    text-align: center;
+}
+
+.title-secondary{
+    text-align: center;
+    font-size: 40px;
+    justify-content: start;
+}
+
+
+.first-box{
+    /* contenedor padre */
+    display: flex;
+    padding: 5%;
+    
+}
+
+.first-box img{
+    width: 50%;
+    padding: 2%;
+}
+
+.first-box p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 2%;
+}
+
+.first-box h4{
+    padding: 2%;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.background-section-2{
+    background-color: #CCD1D1 ;
+    text-align: center;
+    padding: 5%;
+}
+
+footer{
+    display: flex;
+    background-color: #148F77;
+    padding: 0px 25px 0px 25px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  /* alineado vertical */
+    justify-content: center; /* alineado horizontal */
+}
+
+.info h4{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+/* este codigo es para ocultar menu hamburguesa en pantallas grandes */
+.icono-menu{
+    display: none;
+}
+
+
+.img-mobile{
+    display: none;
+}
+.img-desktop{
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        background-color:#148F77;
+    }
+
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .hero{
+        height: 250px;
+        background-position: left center;
+    }
+    .icono-menu{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 8px 10px 8px 10px;
+    }
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -200px;
+        background-color:#148F77;
+        transition: 1s ease top;
+    }
+
+    .container-nav-2{
+        top: 117px;
+
+    }
+
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .first-box{
+        display: block;
+    }
+
+    .first-box img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+    .img-desktop{
+        display: none;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+}

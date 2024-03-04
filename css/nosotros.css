@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+@font-face {
+    font-family:"skate";
+    src: url(../fuentes/HELTSN__.TTF);
+} 
+
+@font-face {
+    font-family:"urban";
+    src: url(../fuentes/Urban_slick.ttf);
+} 
+
+a{
+    /* con esto quita estilos a las anclas <a> */
+    text-decoration: none;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section{
+    padding: 45px, 0px, 45px, 0px;
+}
+
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+
+
+.header{
+    display: flex;
+    background-color: #148F77;
+    
+}
+
+
+.menu-nav{
+    width: 70%;
+    display: flex;
+    justify-content: center; /* alineado horizontal centrado */
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container-nav{
+    width: 80%;
+    display: flex;
+}
+
+.menu a{
+    padding: 0px 25px 0px 25px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #3a2d2d;
+}
+
+.menu a:hover{
+    color: #E8F8F5;
+}
+
+.menu-social ul{
+    list-style: none;
+    display: flex;
+}
+
+.social-media i{
+padding: 25px;
+font-size: 25px;
+color: #fff;
+}
+
+.social-media i:hover{
+    color: #17202A;
+}
+
+.social-media{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    background-image: url(../img/fondo-2.png);
+    width: 100%;
+    height: 999px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1{
+    color: #080808;
+    background-color:#ffffff ;
+    padding: 20px;
+    font-family: "skate", normal;
+}
+
+
+.zapatos{
+    padding: 0px 10px 0px 10px;
+    font-family: "skate", normal;
+}
+
+.title-secondary{
+    text-align: center;
+    font-size: 40px;
+}
+
+.background-section-1{
+    /* estos valores son tomados rgb de la paleta de colores que seleccione en https://colorhunt.co/palette/607274faeed1ded0b6b2a59b */
+    background-image: linear-gradient(rgb(178, 165, 155),#CCD1D1);
+}
+
+.first-box{
+    /* contenedor padre */
+    display: flex;
+    padding: 5%;
+    
+}
+
+.first-box img{
+    width: 50%;
+    padding: 2%;
+}
+
+.first-box p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 2%;
+}
+
+.first-box h4{
+    padding: 2%;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.background-section-2{
+    background-color: #CCD1D1 ;
+}
+
+footer{
+    display: flex;
+    background-color: #148F77;
+    padding: 0px 25px 0px 25px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  /* alineado vertical */
+    justify-content: center; /* alineado horizontal */
+}
+
+.info h4{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+/* este codigo es para ocultar menu hamburguesa en pantallas grandes */
+.icono-menu{
+    display: none;
+}
+
+
+.img-mobile{
+    display: none;
+}
+.img-desktop{
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        background-color:#148F77;
+    }
+
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .hero{
+        height: 250px;
+        background-position: left center;
+    }
+    .icono-menu{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 8px 10px 8px 10px;
+    }
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -200px;
+        background-color:#148F77;
+        transition: 1s ease top;
+    }
+
+    .container-nav-2{
+        top: 117px;
+
+    }
+
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .first-box{
+        display: block;
+    }
+
+    .first-box img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+    .img-desktop{
+        display: none;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+}

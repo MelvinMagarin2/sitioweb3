@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria "footshop"</title>
+    
+    <!-- CDN fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- animateCSS library -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../sitio web/css/sitio2.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="../sitio web/img/Foot-Shop-logo.png" alt="logo de la empresa">
+        <div class="icono-menu" id="menu-mobile">
+            <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+        </div>
+    </div>
+
+    <div class="container-nav" id="menu-movimiento">
+        <nav class="menu-nav">
+            <ul class="menu">
+                <li><a href="sitio.html">Inicio</a></li>
+                <li><a href="../sitio web/nosotros.html">Nosotros</a></li>
+                <li><a href="../sitio web/tienda.html">Tienda</a></li>
+                <li><a href="../sitio web/contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <nav class="menu-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"></a><i class="fa-brands fa-square-x-twitter"></i></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>    
+
+<div class="hero">
+    <h1> FootShop <span class="zapatos"> Zapateria</span></h1>
+</div>
+
+<!-- SECTION 1 -->
+<section class="background-section-1">
+    <h2 class="title-secondary">Puedes encontrar zapatos para<span class="zapatos">Skate</span></h2>
+    <div class="first-box">
+        <img class="img-desktop" src="../sitio web/img/photo-vans.avif" data-aos="fade-right" alt="zapatos">
+        <div>
+            <h4 class="animate__animated animate__pulse">Contamos con</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi necessitatibus harum id at corporis dolore dolor incidunt magnam, tempora expedita vitae, sequi laudantium. Repellat dolorem suscipit hic exercitationem vero!</p>
+        </div>
+        <img class="img-mobile" src="../sitio web/img/photo-vans.avif" data-aos="fa-brands" alt="zapatos">
+    </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="background-section-2">
+    <h2 class="title-secondary">Queremos atenderte<span class="zapatos"> te esperamos</span></h2>
+    <div class="first-box">
+        
+        <div>
+            <h4 class="animate__animated animate__pulse animate__infinite">Vision</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi necessitatibus harum id at corporis dolore dolor incidunt magnam, tempora expedita vitae, sequi laudantium. Repellat dolorem suscipit hic exercitationem vero!</p>
+        </div>
+        <img src="../sitio web/img/vans1.jpg" data-aos="fade-top" alt="postres">
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="logo">
+        <img src="../sitio web/img/Foot-Shop-logo.png" alt="">
+    </div>
+
+    <div class="info">
+        <h4>Foot Shop</h4>
+        <h4><b>Dirección:</b> San Salvador, El Salvador</h4>
+        <h4><b>Correo:</b> contacto@footshop.com</h4>
+    </div>
+
+    <div class="social-media">
+        <nav class="menu-social">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"></a><i class="fa-brands fa-square-x-twitter"></i></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+
+    <!-- JS script de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- inicializar AOS. Dentro del parentesis se pone codigo js -->
+    <script>
+        AOS.init();
+        
+       const menu=  document.getElementById('menu-mobile');
+       const movimiento=  document.getElementById('menu-movimiento');
+       const icono=  document.getElementById('icono-hamburguesa');
+
+       menu.addEventListener('click', function(){
+        if(movimiento.className === 'container-nav'){
+            movimiento.className += ' container-nav-2';
+            icono.className += ' fa-x';
+        }else{
+            movimiento.className = 'container-nav';
+            icono.className = ' fa-solid fa-bars';
+        }
+       });
+
+      </script>
+      
+</body>
+</html>
